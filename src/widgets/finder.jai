@@ -68,8 +68,12 @@ finder_is_open :: () -> bool {
 finder_open :: () {
     active_global_widget = .finder;
 
+    editor, buffer := get_active_editor_and_buffer();
+
     using finder;
-    input.cursor.sel = 0;
+
+    selection_length := abs(editor.cursors[editor.original_cursor].sel -  editor.cursors[editor.original_cursor].pos);
+    input.cursor.sel = xx (ifx selection_length > 0 then input.text.count else 0);
     input.cursor.pos = xx input.text.count;
 
     case_sensitive_toggled_manually = false;
