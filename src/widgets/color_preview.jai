@@ -310,6 +310,7 @@ get_language_sample_text :: (lang: Buffer.Lang) -> string {
         case .Lua;               return SAMPLE_Lua;
         case .Odin;              return SAMPLE_Odin;
         case .Python;            return SAMPLE_Python;
+        case .GDScript;          return SAMPLE_GDScript;
         case .RenPy;             return SAMPLE_RenPy;
         case .Rust;              return SAMPLE_Rust;
         case .Xml;               return SAMPLE_Xml;

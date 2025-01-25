@@ -1604,6 +1604,7 @@ get_tokenize_function :: (lang: Buffer.Lang) -> Tokenize_Function {
         case .Lua;                  return tokenize_lua;
         case .Odin;                 return tokenize_odin;
         case .Python;               return tokenize_python;
+        case .GDScript;             return tokenize_gdscript;
         case .RenPy;                return tokenize_renpy;
         case .Rust;                 return tokenize_rust;
         case .Shell;                return tokenize_shell;
@@ -1843,6 +1844,7 @@ Buffer :: struct {
         Lua;
         Odin;
         Python;
+        GDScript;
         RenPy;
         Rust;
         Xml;

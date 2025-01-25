@@ -267,6 +267,7 @@ get_lang_from_name :: (lang_name: string) -> Buffer.Lang, found: bool {
         case "lua";          return .Lua,        true;
         case "odin";         return .Odin,       true;
         case "python";       return .Python,     true;
+        case "gdscript";     return .GDScript,   true;
         case "renpy";        return .RenPy,      true;
         case "rust";         return .Rust,       true;
         case "html";         return .Html,       true;

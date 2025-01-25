@@ -178,6 +178,7 @@ is_known_text_file_extension :: (extension: string) -> bool {
         case "log";     #through;
         case "sql";     #through;
         case "py";      #through;
+        case "gd";      #through;
         case "m";       #through;
         case "html";    #through;
         case "xml";     #through;
